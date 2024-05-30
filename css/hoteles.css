@@ -34,7 +34,6 @@ body {
   justify-content: center;
   background-color: var(--color-secundario);
   border-radius: 10px;
-  max-width: 75rem;
   height: 230px;
   margin: 25px;
   font-size: 1.2rem;
@@ -44,24 +43,6 @@ body {
 
 .intro h4 {
   margin-bottom: 40px;
-}
-
-.opinion-verificada {
-  height: 150px;
-  max-width: 1000px;
-  margin: 15px 0px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: var(--color-secundario);
-  border-radius: 10px;
-  color: aliceblue;
-}
-
-.opinion-verificada h4 {
-  margin-bottom: 30px;
 }
 
 .opiniones {
@@ -164,7 +145,8 @@ body {
 
 @media only screen and (max-width: 890px) {
   .intro {
-    max-width: 860px;
+    padding: 15px;
+    margin: 50px;
     height: auto;
   }
 
@@ -200,3 +182,22 @@ body {
 
 }
 
+@media only screen and (max-width: 400px) {
+  body,footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .opiniones,.hoteles,.intro {
+    margin: 10px auto;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
